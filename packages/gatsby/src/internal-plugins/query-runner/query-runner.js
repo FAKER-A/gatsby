@@ -1,10 +1,10 @@
 import { graphql as graphqlFunction } from "graphql"
 const fs = require(`fs`)
 const Promise = require(`bluebird`)
+const report = require(`gatsby-cli/lib/reporter`)
 
 const writeFileAsync = Promise.promisify(fs.writeFile)
 const { joinPath } = require(`../../utils/path`)
-const report = require(`../../reporter`)
 
 const { store } = require(`../../redux`)
 
